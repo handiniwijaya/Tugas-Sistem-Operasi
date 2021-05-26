@@ -1,2 +1,2 @@
-# Assignment1-Sistem-Operasi
+# Sistem Operasi
  Handini Aprillia Wijaya - 1313619038
