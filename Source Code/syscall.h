@@ -6,6 +6,13 @@
 #define SYS_read    SYS_pipe+1
 #define SYS_kill    SYS_read+1
 #define SYS_exec    SYS_kill+1
+#define SYS_fork    1
+#define SYS_exit    SYS_fork+1
+#define SYS_wait    SYS_exit+1
+#define SYS_pipe    SYS_wait+1
+#define SYS_read    SYS_pipe+1
+#define SYS_kill    SYS_read+1
+#define SYS_exec    SYS_kill+1
 #define SYS_fstat   SYS_exec+1
 #define SYS_chdir   SYS_fstat+1
 #define SYS_dup     SYS_chdir+1
@@ -22,5 +29,11 @@
 #define SYS_close   SYS_mkdir+1
 #define SYS_halt    SYS_close+1
 #define SYS_date    SYS_halt+1
+#define SYS_getuid  SYS_date+1
+#define SYS_getgid  SYS_getuid+1
+#define SYS_getppid SYS_getgid+1
+#define SYS_setuid  SYS_getppid+1
+#define SYS_setgid  SYS_setuid+1
+#define SYS_getprocs    SYS_setgid+1
 
 // student system calls begin here. Follow the existing pattern.
